@@ -1,0 +1,28 @@
+package week2_chinritsui.practice02;
+
+class Armor implements Item {
+
+    private String name;
+    private int defenceValue;
+
+    // 构造器
+    public Armor(String name, int defenceValue) {
+        this.name = name;
+        this.defenceValue = defenceValue;
+    }
+
+    // getter
+    public String getName() {
+        return name;
+    }
+
+    public int getDefenceValue() {
+        return defenceValue;
+    }
+
+    // 实现 use()
+    public void use() {
+        System.out.println(name + "を身に着けた");
+        System.out.println("守備力が" + defenceValue + "上がった");
+    }
+}
